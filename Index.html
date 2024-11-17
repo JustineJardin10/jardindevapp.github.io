@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Portfolio | Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('nature-319.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white; /* Change text color for better contrast with background */
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.7); /* Dark background with transparency */
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin-top: 1rem;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.7); /* Transparent white background */
+            color: #333;
+        }
+        .section {
+            display: none; /* Hide all sections by default */
+            margin-bottom: 4rem;
+        }
+        .active {
+            display: block; /* Show the active section */
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        .portfolio-item {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .portfolio-item div {
+            flex: 1 1 30%;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background-color: rgba(255, 255, 255, 0.474);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.classList.remove('active'));
+
+            // Show the selected section
+            document.getElementById(sectionId).classList.add('active');
+        }
+
+
+        // Automatically show the Home section on page load
+        window.onload = function() {
+            showSection('home');
+        };
+    </script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>APPLICATIONS DEVELOPMENT AND EMERGING TECHNOLOGIES</h1>
+        <p>Explore the dynamic field of applications development and the impact of emerging technologies on modern software solutions.</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+    </p>
+    <a onclick="showSection('home')" style="color: white; font-weight: bold; font-size: 20px;">Home</a>
+    <a onclick="showSection('skills')" style="color: white; font-weight: bold; font-size: 20px;">Sources</a>
+    <a onclick="showSection('projects')" style="color: white; font-weight: bold; font-size: 20px;">Lab Activities</a>
+    <a onclick="showSection('contact')" style="color: white; font-weight: bold; font-size: 20px;">Instructor</a>
+    </nav>
+
+    <!--Home section-->
+   
+
+    <section id="home" class="container section">
+        <h2>About Me</h2>
+        <p>
+            Hello! I am <span style="font-weight: bold; font-size: 1.5rem;">JUSTINE KYLE ISIAH P. JARDIN </span>, 
+            a
+            <span style="font-weight: bold; font-size: 1.5rem;">BS Information Technology</span>, 
+            in
+            <span style="font-weight: bold; font-size: 1.5rem;"> Adamson University</span>. 
+            I enjoy learning new technologies and improving my skills every day.
+        </p>
+        
+        <p style="text-align: center;">
+            <span style="font-weight: bold; font-size: 20px;">Course Objectives:</span><br>
+            Understand Core Principles<br>
+            Explore Emerging Technologies<br>
+            Develop Practical Skills<br>
+            Analyze Impact and Trends<br><br>
+            
+            <span style="font-weight: bold; font-size: 20px;">Learning Outcomes:</span><br>
+            Design and Develop Applications<br>
+            Implement Emerging Technologies<br>
+            Evaluate Technological Impact<br>
+            Adapt to Industry Trends
+        </p>
+        
+    </section>
+    
+
+<!-- Skills Section -->
+<section id="skills" class="container section py-5">
+    <h2 class="text-center mb-4" style="font-size: 2.5rem; font-weight: bold; color: #333;">Sources</h2>
+    <div class="col-md-3 mb-4"></div>
+
+    <!-- Ensure all sections are inside one row -->
+    <div class="row mt-4"> <!-- Parent row wrapping all columns -->
+        
+        <!-- Textbook Section -->
+        <div class="col-md-4 mb-4">
+            <div class="row mt-4">
+            <div class="card shadow-sm h-100">
+                <img class="card-img-top" src="Textbook2.jpg" alt="Textbook">
+                <div class="card-body">
+                    <h5 class="card-title" style="font-size: 2rem; font-weight: bold;">Textbook</h5>
+                    <a href="https://www.techrepublic.com/article/the-future-of-software-development-and-emerging-technologies/" target="_blank" class="btn btn-outline-info btn-block">TechRepublic</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Article Section -->
+<div class="col-md-4 mb-4 d-flex justify-content-center">
+    <div class="row mt-4">
+        <div class="card shadow-sm h-100 text-center">
+            <img class="card-img-top" src="Article.png" alt="Article">
+            <div class="card-body">
+                <h5 class="card-title" style="font-size: 2rem; font-weight: bold;">Article</h5>
+                <a href="https://www.forbes.com/sites/forbestechcouncil/2023/01/12/how-artificial-intelligence-will-transform-software-development/" target="_blank" class="btn btn-outline-info btn-block">Forbes</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <!-- External Links Section -->
+        <div class="col-md-4 mb-4">
+            <div class="col-md-3 mb-4"></div>
+            <div class="card shadow-sm h-100">
+                <img class="card-img-top" src="EL.png" alt="External Links">
+                <div class="card-body">
+                    <h5 class="card-title" style="font-size: 2rem; font-weight: bold;">External Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="https://www.ibm.com/topics/what-is-blockchain" target="_blank" class="btn btn-outline-success btn-block">IBM Blockchain</a></li>
+                        <li class="mb-2"><a href="https://azure.microsoft.com/en-us/overview/what-is-cloud-computing/" target="_blank" class="btn btn-outline-success btn-block">Microsoft Azure</a></li>
+                        <li class="mb-2"><a href="https://www.i-scoop.eu/internet-of-things-iot/" target="_blank" class="btn btn-outline-success btn-block">i-Scoop IoT</a></li>
+                        <li class="mb-2"><a href="https://www.vive.com/us/what-is-ar/" target="_blank" class="btn btn-outline-success btn-block">HTC Vive AR</a></li>
+                        <li class="mb-2"><a href="https://www.coursera.org/articles/essential-skills-for-software-development" target="_blank" class="btn btn-outline-success btn-block">Coursera</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+  <!-- Projects Section -->
+<section id="projects" class="container section">
+    <h2>Laboratory Activities</h2>
+    <div class="row d-flex">
+        <!-- First Lab Activity -->
+        <div class="col-md-6 d-flex">
+            <div class="card flex-fill">
+                <img class="card-img-top" src="download.jpg" alt="Lab 1">
+                <div class="card-body">
+                    <h5 class="card-title">Lab Activity 1</h5>
+                    <p class="card-text">Develop a PHP input form for the Manila Authors’ Club to manage their authors' pay system.</p>
+                    <a href="Lab_Act#1+(1).pdf" download class="btn download-btn">Download Lab 1 PDF</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Lab Activity -->
+        <div class="col-md-6 d-flex">
+            <div class="card flex-fill">
+                <img class="card-img-top" src="download 2.jpg" alt="Lab 2">
+                <div class="card-body">
+                    <h5 class="card-title">Homework Course Portfolio</h5>
+                    <p class="card-text">Design a Course Portfolio using Bootstrap that contains several key pages to present important course-related content. The portfolio will consist of a homepage displaying the course description, a menu for navigating to lab exercises, and additional pages for extra content like resources or instructor information.</p>
+                    <a href="" download class="btn download-btn">Download Lab Files</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+ <!-- Instructor Information -->
+<section id="contact" class="container section" style="background-color: transparent;">
+    <div class="mt-4 d-flex flex-column align-items-center">
+        <h2 style="text-align: center; font-size: 2.5rem; font-weight: bold;">Instructor Information</h2>
+
+        <!-- Centering the media content -->
+        <div class="media flex-column align-items-center text-center">
+            <div style="display: flex; justify-content: center;">
+                <img src="Instructor.jpg" class="mb-3 rounded-circle" alt="Instructor Photo" style="width: 150px; height: 150px;">
+            </div>
+
+            <!-- Text content -->
+            <div class="media-body">
+                <!-- Instructor Name with Larger Font Size -->
+                <div style="text-align: center;">
+                    <h5 class="mt-0" style="font-size: 2rem; font-weight: bold;">Ms. Anette Daligcon</h5>
+                </div>
+                <div style="text-align: center;">
+                    <strong>
+                        <p>Professor in Applications Development & Emerging Technologies</p>
+                        <p><strong>Laboratory:</strong> Wednesday, 2:00 PM - 5:00 PM</p>
+                        <p><strong>Lecture:</strong> Tuesday and Thursday, 2:00 PM - 3:00 PM</p>
+                    </strong>
+                </div>
+
+                <div style="text-align: center;">
+                    <strong>
+                        <p><strong>Consultation Hours:</strong></p>
+                        <ul style="list-style: none; padding: 0;">
+                            <li>Tuesday, 10:00 AM - 11:00 AM</li>
+                            <li>Wednesday, 5:00 PM - 6:00 PM</li>
+                            <li>Thursday, 2:00 PM - 3:00 PM</li>
+                        </ul>
+                    </strong>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Justine Jardin. All rights reserved.</p>
+    </footer>
+
+
+</body>
+</html>
